@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://askomdch.com",
+
+  "registeredUser": {
+    "username": "bettertester3@gmail.com",
+    "password": "Bettertester@3"
+  },
+
+  "guestUser": {
+    "billingAddress": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "company": "ABC Technologies",
+      "country": "United States",
+      "addressLine1": "123 Main Street",
+      "addressLine2": "Apartment 4B",
+      "city": "New York",
+      "state": "New York",
+      "zipCode": "10001",
+      "phone": "9876543210",
+      "email": "john.doe@testmail.com"
+    }
+  },
+
+  "product": {
+    "name": "Blue Shoes"
+  }
+}
