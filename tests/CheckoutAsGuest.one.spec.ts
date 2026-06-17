@@ -7,6 +7,11 @@ import { CartPage } from '../pages/CartPage';
 import { CheckoutPage } from '../pages/CheckoutPage';
 import { OrderConfirmationPage } from '../pages/OrderConfirmationPage';
 
+// import dotenv  from 'dotenv';
+// import path from 'path';
+// dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+
 test('Checkout As Guest User', async ({ page }) => {
 
   const landingPage = new LandingPage(page);
@@ -14,8 +19,10 @@ test('Checkout As Guest User', async ({ page }) => {
   const cartPage = new CartPage(page);
   const checkoutPage = new CheckoutPage(page);
   const orderPage = new OrderConfirmationPage(page);
+  // const url = process.env.BASE_URL!;
 
   await landingPage.navigate(testData.baseUrl);
+  // await landingPage.navigate(url);
 
   await landingPage.clickStoreMenu();
 

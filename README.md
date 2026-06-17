@@ -5,6 +5,7 @@ Installing Playwright
 Get started by installing Playwright using one of the following methods.
 npm init playwright@latest
 
+
 Select the folowing while creating the Playwright project
 TypeScript or JavaScript (default: TypeScript)
 Tests folder name (default: tests, or e2e if tests already exists)
@@ -27,6 +28,7 @@ To resolve error "Cannot find name 'process'" install the following
 sudo apt install node-typescript
 npm i --save-dev @types/node
 tsc --init
+npm install dotenv
 
 
 In the project root folder,Create the following folders and files

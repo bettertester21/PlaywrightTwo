@@ -9,7 +9,7 @@ export class WaitHelper {
   }
 
   static async waitForPageLoad(page: Page) {
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('load', { timeout: 45000 });
   }
 
   static async waitForURL(page: Page, url: string) {

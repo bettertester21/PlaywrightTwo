@@ -20,7 +20,7 @@ export class BasePage {
   }
 
   async waitForPageLoad() {
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState('load', { timeout: 45000 });
   }
 
   async setHiddenSelectValue(selector: string, label: string) {
